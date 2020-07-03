@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="utf-8"/>
+
+    <title>Roulette principal</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+
+    <!-- Custom styles for this template -->
+    <link href="#" th:href="@{/css/style.css}" rel="stylesheet" />
+    
+ 	<link href="#" th:href="@{/css/contacts.css}" rel="stylesheet" />
+ 	
+  </head>
+
+  <body>
+	
+	<div class="container">
+	
+		<h1>Bienvenido  a la Ruleta</h1>
+		<br/>
+		
+		<div><img src="../imgs/ruleta.jpg" class="img-fluid" alt="Responsive image"> </div>
+		
+		<a href="#" th:href="@{/principal/gameplay}">
+		<button class="btn btn-lg btn-primary btn-block" type="submit"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Nueva Ruleta</button>
+		</a>
+		<a href="#" th:href="@{/login?logout}">
+			<button class="btn btn-lg btn-primary btn-block" type="submit"><span class="glyphicon glyphicon-log-out" aria-hidden="true"></span> Logout</button>
+		</a>
+	
+	</div>
+
+
+</body>
+</html>
