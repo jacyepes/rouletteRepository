@@ -11,7 +11,7 @@ import com.masivian.roulette.model.NumberColorBet;
 @Controller
 @RequestMapping("/principal")
 public class GamePlayController {
-
+	
 	@GetMapping("/gameplay")
 	public String gamePlayController() {
 		return "gameplay";
@@ -22,9 +22,10 @@ public class GamePlayController {
 		return "principal";
 	}
 	
-	@PostMapping("/numbercolorbet")
-	public String numberColorBet(@ModelAttribute(name="numberColorBet") NumberColorBet numberColorBet) {
-		return "gameplay";
+	@GetMapping("/apostar")
+	public String betController() {
+		return "apostar";
 	}
+	
 
 }
